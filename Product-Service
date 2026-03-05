@@ -1,1 +1,27 @@
-Product-Service
+spring.application.name=Product-Service
+server.port=8082
+
+
+# H2 Database (In-memory)
+spring.datasource.url=jdbc:h2:mem:productdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+#Enabling h2-console and path
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+spring.jpa.hibernate.ddl-auto=update
+spring.sql.init.mode=always
+
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+
+
+
+
+
+
+
+
